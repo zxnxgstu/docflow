@@ -281,6 +281,7 @@ html[data-reduce-motion="true"] .floating-result {
    --hero-text: #243047;
    --hero-muted: #66738a;
    --hero-grid-line: #d8ddec;
+   --hero-table-line: #aeb8c9;
    --hero-accent: #6267d8;
    --hero-success: #2d9b78;
    --hero-pdf: #e87470;
@@ -303,6 +304,7 @@ html[data-theme="dark"] {
    --hero-text: #f1f4fa;
    --hero-muted: #b4c0d2;
    --hero-grid-line: #43516a;
+   --hero-table-line: #62718b;
    --hero-accent: #9b9df6;
    --hero-success: #70d2ad;
    --hero-pdf: #ff928c;
@@ -536,6 +538,41 @@ html[data-theme="dark"] .metric-card.blue { --metric-icon-bg: #203b5b; --metric-
 .flow-connector > span { background: var(--hero-accent); }
 .flow-connector > i { background: var(--hero-indicator); border-color: var(--hero-bg); }
 .floating-result { background: var(--hero-card); border-color: var(--hero-card-border); }
+
+.hero-graphic .source-document,
+.hero-graphic .output-workbook {
+   width: 226px;
+   min-height: 246px;
+}
+.hero-graphic .source-head,
+.hero-graphic .workbook-head {
+   font-family: inherit;
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.35;
+}
+.hero-graphic .output-workbook .sheet-tabs > * {
+   color: var(--hero-text);
+   font-family: inherit;
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.35;
+}
+.hero-graphic .output-workbook .sheet-tabs b { color: var(--hero-excel); }
+.hero-graphic .output-workbook .sheet-grid,
+.hero-graphic .output-workbook .cell {
+   border-color: var(--hero-table-line);
+}
+.hero-graphic .output-workbook .cell {
+   min-height: 29px;
+   padding: 7px 8px;
+   color: var(--hero-text);
+   font-family: inherit;
+   font-size: 11px;
+   line-height: 1.35;
+}
+.hero-graphic .output-workbook .cell.head { font-weight: 700; }
+.hero-graphic .output-workbook .cell:nth-child(even) { font-weight: 600; }
 
 /* --------------------------------------------------------------------------
    DocFlow visual refresh — a warmer, product-first interface
