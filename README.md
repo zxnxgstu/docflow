@@ -1,10 +1,22 @@
 # DocFlow
 
+[![CI](https://github.com/zxnxgstu/docflow/actions/workflows/ci.yml/badge.svg)](https://github.com/zxnxgstu/docflow/actions/workflows/ci.yml)
+
 **Document Data Extraction & Excel Automation**
 
 DocFlow is a full-stack application that turns text-based PDF documents into structured, reviewable data and polished Excel workbooks. It is designed as a portfolio-ready product rather than a demo CRUD app.
 
 Version 0.2 introduces a product-focused interface with a custom PDF-to-Excel visual, clearer onboarding, responsive light and dark themes, actionable empty states and a cohesive design system across the dashboard, document library, editor, exports and settings.
+
+## Screenshots
+
+| Dark theme | Light theme |
+| --- | --- |
+| ![Dark theme](docs/screenshots/dashboard-dark.png.png) | ![Light theme](docs/screenshots/dashboard-light.png.png) |
+
+![Extraction editor](docs/screenshots/extraction-editor.png.png)
+
+*Extraction editor*
 
 ## What it does
 
@@ -48,7 +60,7 @@ flowchart LR
 Requirements: Docker Desktop with Docker Compose.
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/zxnxgstu/docflow.git
 cd docflow
 docker compose up --build
 ```
